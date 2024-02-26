@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StopWatch Timer</title>
+    <link rel="stylesheet" href="style.css" class="rel">
+</head>
+<body>
+    <section class="timer_container">
+        <h3 class="container__title">Countdown Timer</h3>
+        <div class="boxes">
+            <div class="box hour">
+                <h5>Hour</h5>
+               <div class="input_cont">
+                <input class="hour_input"
+                type="number"
+                maxLength="2"
+                placeholder="00"
+                oninput="onTimerInput(this)"/>
+                <span>:</span>
+               </div>
+            </div>
+            <div class="box min">
+                <h5>Minutes</h5>
+                <div class="input_cont">
+                    <input class="minute_input"
+                    type="number"
+                    maxLength="2"
+                    placeholder="00"
+                    oninput="onTimerInput(this)"/>
+                    <span>:</span>
+                </div>
+
+            </div>
+            <div class="box sec">
+                <h5>Seconds</h5>
+                <div class="input_cont">
+                    <input class="second_input"
+                type="number"
+                maxLength="2"
+                placeholder="00"
+                oninput="onTimerInput(this)"/>
+                </div>
+            </div>
+        </div>
+        <div class="btn_block">
+            <div class="btn start">Start</div>
+            <!-- <div class="btn continueorpause">Continue</div> -->
+            <div class="btn reset">Reset</div>
+        </div>
+
+    </section>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
